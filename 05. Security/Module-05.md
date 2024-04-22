@@ -1,4 +1,4 @@
-05. Security in Docker
+# 05. Security in Docker
 
 Security in Docker involves measures to safeguard containers, the Docker environment, and underlying infrastructure. 
 Key aspects include:
