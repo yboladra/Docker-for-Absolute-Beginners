@@ -5,6 +5,8 @@
 - **Implementing Security Policies:** Explore how to implement security policies and compliance standards in Docker EE using role-based access control (RBAC) and network policies.
 
 
+Please refer to the **Module-05.md** to learn more.
+
 Enjoying the content? Subscribe to [Azure DevOps Pulse](https://www.youtube.com/@AzureDevOpsPulse) on YouTube for more DevOps topics!
 
 Let's innovate together. Happy learning! 🚀

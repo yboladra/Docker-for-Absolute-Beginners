@@ -5,6 +5,8 @@
 - **Advanced Storage Solutions:** Dive into advanced storage solutions for Docker, such as distributed storage systems and encryption options for securing sensitive data.
 
 
+Please refer to the **Module-06.md** to learn more.
+
 Enjoying the content? Subscribe to [Azure DevOps Pulse](https://www.youtube.com/@AzureDevOpsPulse) on YouTube for more DevOps topics!
 
 Let's innovate together. Happy learning! 🚀

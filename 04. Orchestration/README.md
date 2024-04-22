@@ -5,6 +5,8 @@
 - **Introduction to Kubernetes:** Get introduced to Kubernetes, a powerful container orchestration platform, and explore basic concepts like pods, deployments, and services.
 
 
+Please refer to the **Module-04.md** to learn more.
+
 Enjoying the content? Subscribe to [Azure DevOps Pulse](https://www.youtube.com/@AzureDevOpsPulse) on YouTube for more DevOps topics!
 
 Let's innovate together. Happy learning! 🚀
