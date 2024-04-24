@@ -4,6 +4,7 @@ Let's delve into the world of Docker images with examples for various applicatio
 
 ### Step-1: Create a Dockerfile, named as `Dockerfile` in your project directory.
 Here we have 3 Dockerfiles such as Python, ASP.net and Java based application, you can choose any according to your requirements. 
+
 **01.Python Flask Application:**
  ```Dockerfile
 # Use a minimal Python base image
@@ -130,7 +131,8 @@ This focuses on building the Docker image using the instructions provided in a D
 docker build -t Image_name:latest .
 ```
 This builds the image and tags it as `Image_name:latest`. You can verify the build using `docker images`.
-Note: If you don't define tag name during docker image creation. You would need to create a tag for the image later.
+
+**Note:** If you don't define tag name during docker image creation. You would need to create a tag for the image later.
 
 ### Step-3: Tag the Docker Image (Optional, but recommended):
 For pushing to a registry, it's useful to have a more descriptive tag. Let's assume your Docker Hub username is `hriyen`:
@@ -204,7 +206,10 @@ docker tag my-python-app <username>/my-python-app:latest
    az acr login --name <registry_name>
    ```
    You'll be prompted to authenticate with your Azure account.
-4. **Tag Your Image for Pushing:** After building your Docker image, tag it with the login server of your Azure Container Registry.
+   
+   **Note:** Please enable AcrPull & AcrPush permision for Azure Container Registry.
+    
+5. **Tag Your Image for Pushing:** After building your Docker image, tag it with the login server of your Azure Container Registry.
    
    The login server can be found in the Azure Portal under the ACR's properties or Run `az acr show --name <acr_name>` (replace `<acr_name>` with your ACR name).
 
@@ -213,9 +218,9 @@ docker tag my-python-app <username>/my-python-app:latest
    ```
    Replace <username> with your username and my-python-app with your actual image name. The :latest tag refers to the latest version. You can use different tags for specific versions.
    
-   Note: If you've already tagged your image for Docker Hub, you'll need to create a separate tag that includes the login server of your Azure Container Registry (ACR) before pushing it there.
+   **Note:** If you've already tagged your image for Docker Hub, you'll need to create a separate tag that includes the login server of your Azure Container Registry (ACR) before pushing it there.
    
-5. **Pushing the Image to Azure Container Registry (ACR)**
+6. **Pushing the Image to Azure Container Registry (ACR)**
 
    Replace `<image_name>` with the name of your Docker image, `<tag>` with the desired tag, and `<acr_login_server>` with the login server of your ACR.
 
@@ -223,9 +228,6 @@ docker tag my-python-app <username>/my-python-app:latest
    ```bash
     docker push <acr_login_server>/<image_name>:<tag>
    ```
-  **Congratulations!** This command will upload the image to your ACR repository. 
+  **Congratulations!** This command will upload the image to your ACR repository.
   
 You can check your Azure Container Registry in the Azure portal by searching with the registry name. Then navigate to the "`Repositories`" tab to view the available repositories and their contents.
-
-
-## Alright, see you in the next module.
