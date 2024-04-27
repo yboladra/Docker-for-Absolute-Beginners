@@ -82,7 +82,7 @@ Here are some essential commands to get you started:
 - `docker logs <container>`: View logs of a container.
 - `docker inspect <container>`: Display detailed information about a container.
 - `docker history <image>`: Show the history of an image.
-- `docker prune`: Remove all stopped containers, dangling images, and unused networks and volumes.
+- `docker system prune`: Remove all stopped containers, dangling images, and unused networks and volumes.
 
 These commands should help you perform basic operations with Docker containers and images.
 
@@ -106,6 +106,3 @@ These commands should help you perform basic operations with Docker containers a
 ### Creating Custom Images (Later)
 
 Dockerfiles are special text files used to build custom images. We'll cover this in more detail later, but for now, focus on using pre-built images to get started quickly.
-
-
-## Alright, see you in the next module.
