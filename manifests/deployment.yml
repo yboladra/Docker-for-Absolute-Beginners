@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sunkubeimage 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sunkubeimage
+  template:
+    metadata:
+      labels:
+        app: sunkubeimage 
+    spec:
+      containers:
+        - name: sunkubeimage 
+          image: sunkubectlreg.azurecr.io/sunkubeimage
+          ports:
+          - containerPort: 8080
